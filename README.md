@@ -1,8 +1,9 @@
 # COVID-19
 This repo is for the experiment codes.
 
-
-
+### Data Preprocess
+Codes about data preprocess is in:  
+`./utils`
 
 
 ### Training  
