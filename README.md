@@ -2,7 +2,7 @@
 This repo is for the experiment codes.
 
 ### Data Preprocess
-Codes about data preprocess is in:  
+Codes for data preprocess is in:  
 `./utils`
 
 
