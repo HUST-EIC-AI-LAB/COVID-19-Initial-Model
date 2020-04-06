@@ -10,11 +10,11 @@ As for our datasets, we use multi-center datasets of totally 1276 CT studies com
 ### Data Preprocess
 Codes for data preprocess is in:  `./utils`    
 
-Initialy, the CT images we get from hospital are not exactly what we can feed to network directly. So there are some clean operation have been done to the initial datasets. These operations are built based on our careful check into the CT images. We found when the slice numbers of CT are less than 15 and the width or height of CT images are not equal 512 pixeles, the images are usually not useful lung CT. After that we clip all images' pixels to [-1200, 600], which is a ordinay operation in medical image. Finally, we calculate the mean and std of the whole datasets and then normalize every image.    
+Initialy, the CT images we get from hospital are not exactly what we can feed to network directly. So there are some cleaning operations have been done to the initial datasets. These operations are built based on our careful check into the CT images. We found when the slice numbers of CT are less than 15 and the width or height of CT images are not equal to 512 pixeles, the images are usually not useful lung CT. After that we clip all images' pixels to [-1200, 600], which is a ordinay operation in medical image. Finally, we calculate the mean and std of the whole datasets and then normalize every image.    
 
 
 ### Model  
-We ultilize 3D-DenseNet as our baseline model. Before we feed images into network, we find if we can cover the whole lung in temporal direction, the model behave much better. Besides, we confim that there is a linear relation between slice thickness and slice numbers. So a sample strategy is bulit which follows the following pseudo codes:  
+We ultilize 3D-DenseNet as our baseline model. Before we feed images into network, we find if we can cover the whole lung in temporal direction, the model behave much better. Besides, we confim that there is a linear relation between slice thickness and slice numbers. As a result, a sample strategy is bulit which follows the following pseudo codes:  
 ```python
 if slice number<=80:
     random start index;
