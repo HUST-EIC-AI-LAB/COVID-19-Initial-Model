@@ -29,6 +29,7 @@ else:
 ```
 - resize sequence images to [16,128,128]
 - no augmentation
+- regulization --- linear_scheduler dropblock(prob=0., block_size=5 )
 - Optimizer --- torch.optim.SGD(params, lr=0.01, momentum=0.9, weight_decay=1e-5)
 - lr_scheduler --- lr_warmup and optim.lr_scheduler.CosineAnnealingLR()
 - output layer --- FC(features, 4) -> weighted cross entropy + OHEM?
