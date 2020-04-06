@@ -58,8 +58,6 @@ python test_case.py
 Our model achieves the following performance on :
 
 - four classes  
-
-
 - six classes
 
 
