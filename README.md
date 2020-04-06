@@ -58,6 +58,7 @@ python test_case.py
 Our model achieves the following performance on :
 
 - four classes    
+
 |label|name|
 |-----|-----|
 |0|healthy|
@@ -67,6 +68,7 @@ Our model achieves the following performance on :
 
 
 - six classes
+
 |label|name|
 |-----|----|
 |0|healthy|
