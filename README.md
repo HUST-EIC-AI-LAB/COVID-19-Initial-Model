@@ -57,8 +57,25 @@ python test_case.py
 ### Results
 Our model achieves the following performance on :
 
-- four classes  
+- four classes    
+|label|name|
+|-----|-----|
+|0|healthy|
+|1|COVID-19|
+|2|other viral pneumonia|
+|3|bacterial pneumonia|
+
+
 - six classes
+|label|name|
+|-----|----|
+|0|healthy|
+|1|COVID-19 mild|
+|2|other viral pneumonia|
+|3|bacterial pneumonia|
+|4|COVID-19 moderate|
+|5|COVID-19 severe|
+
 
 
 
