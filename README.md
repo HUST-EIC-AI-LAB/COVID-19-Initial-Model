@@ -63,7 +63,6 @@ Our model achieves the following performance on :
 - six classes
 
 
-- test on XieHe datasets
 
 
 
