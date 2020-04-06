@@ -1,6 +1,7 @@
 # COVID-19
-This repo is for the experiment codes.
-We regard COVID-19 diagnosis as a multi-classification task. Two models are builted for this task, the first one can classify COVID-19 to four classes including `healthy`, 'COVID-19`, 'other viral pneumonia`, `bacterial pneumonia`, and the other one can accurately assess the severity level for putative COVID-19 patients.   
+This repo is for the experiment codes.     
+
+We regard COVID-19 diagnosis as a multi-classification task. Two models are builted for this task, the first one can classify COVID-19 to four classes including `healthy`, `COVID-19`, `other viral pneumonia`, `bacterial pneumonia`, and the other one can accurately assess the severity level for putative COVID-19 patients.   
 
 As for our datasets, we use multi-center datasets of totally 1276 CT studies comprising 432 confirmed COVID-19, 76 other viral pneumonia, 350 bacterial pneumonia and 418 healthy cases. 
 
