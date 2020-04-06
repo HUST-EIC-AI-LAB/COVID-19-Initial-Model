@@ -45,7 +45,7 @@ python train.py
 
 
 ### Test
-To evaluate my model on our dataset, run:
+To evaluate my model on our dataset, run this command:
 ```sh
 python test_case.py
 ```
