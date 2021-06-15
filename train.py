@@ -55,7 +55,7 @@ def train(train_data_loader, test_data_loader, model, optimizer, log,
             inputs = F.interpolate(inputs, size = [16, 128, 128], mode = "trilinear", align_corners = False)
             outputs = model(inputs)
             loss = criterion(outputs, labels)
-            loss.backward()
+#             loss.backward()
             with amp.scale_loss(loss, optimizer) as scaled_loss:
                 scaled_loss.backward()
             optimizer.step()
